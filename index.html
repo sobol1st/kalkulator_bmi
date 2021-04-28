@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+
+   
+	
+	<meta charset="utf-8" />
+	<title>Kalkulator BMI</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />	
+		<script>
+	function oblicz()
+	{
+	var waga = document.getElementById("waga").value;
+	var wzrost = document.getElementById("wzrost").value;
+
+	var bmi = waga/(wzrost*wzrost);
+	document.getElementById("wynik").innerHTML = (bmi*10000).toFixed(3);
+	}
+	</script>
+	<style>
+	
+	h1
+		{
+			text-align: center;
+		}
+	h2
+		{
+			text-align: center;
+		}
+	h3	
+	    {
+			text-align: center;
+		}
+	h4 
+        {
+			text-align: center;
+		}
+	h5	
+	    {
+			text-align: center;
+		}
+	</style>
+
+</head>
+
+ <body>
+ <center>
+	<img src="Tytuł.jpg" />
+	</center>
+ 
+<h1>Oblicz swój wskaźnik BMI</h1>
+<h2>UWAGA! BMI została opracowana wyłącznie dla dorosłychi nie może być stosowana u dzieci!</h2>
+	
+    <label for "waga">Tu podaj swoja wagę w kg</label>
+	
+	<input type = "number" id = "waga" value = 0>
+	<label for "wzrost">Tu podaj swój wzrost w cm</label>
+	<input type = "number" id = "wzrost" value = 0>
+	<input type = "button" value = "Oblicz BMI" onclick = "oblicz()">
+	
+	<h5>----------<div id="wynik"></div>----------</h5>
+
+<h3>BMI a interpretacje wyniku:</h3>
+<h4><16,0 - wygłodzenie</h4>
+<h4>16,0 – 16,9 - wychudzenie</h4>
+<h4>17,0 - 18,5	- niedowaga</h4>
+<h4>18,5 – 24,9 - waga prawidłowa</h4>
+<h4>25,0 – 29,9	- nadwaga</h4>
+<h4>30,0 – 34,9	- otyłość I stopnia</h4>
+<h4>35,0 – 39,9 - otyłość II stopnia</h4>
+<h4>≥40	- otyłość III stopnia</h4>
+
+
+
+
+
+
+
+
+	
+</body>
+</html>
